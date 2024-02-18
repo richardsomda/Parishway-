@@ -5,24 +5,18 @@ import { BiLogoPlayStore } from "react-icons/bi";
 import { SiAppstore } from "react-icons/si";
 
 
-
-
-
 export default function page() {
   return (
     <div className='backImage'>
-      <div className='max-h-screen  bg-green-00 items-center w-[75%] md:w-[85%] xl:w-[70%] md:pt-10 xl:pt-16 mx-auto flex flex-wrap md:flex'>
+      <div className='h-screen md:pt-10 xl:pt-16 items-center w-[75%] md:w-[85%] xl:w-[70%] mx-auto flex flex-wrap md:flex'>
 
         <div className='md:hidden mx-auto my- flex items-center  justify-center'>
           <Image
             src={'/pwlogo.png'}
             width={200}
             height={200}
-            className='my-'
-
-          />
+            className='my-' />
         </div>
-
 
         {/* text */}
         <div className='w-full md:w-[48%] h-full items-center flex justify-center '>
@@ -60,7 +54,6 @@ export default function page() {
           </div>
         </div>
 
-
         {/* hero image */}
         <div className='w-full md:w-[48%] flex  items-center mx-auto justify-center'>
           <Image
@@ -70,6 +63,8 @@ export default function page() {
             className='lg:w-[700px] w-[80%] mx-auto'
           />
         </div>
+
+
       </div>
     </div>
   )
