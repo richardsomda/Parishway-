@@ -10,16 +10,8 @@ import { useRouter } from 'next/router';
 
 
 
-export default function Navbar() {
-    const [menu, setMenu] = useState("Home");
-    // const router = useRouter();
-
-    // useEffect(() => {
-    //     const pathname = router.pathname;
-    //     const newMenu = pathname.split('/')[1] || 'Home'; // Extract menu item from path
-    //     setMenu(newMenu);
-    // }, [router.pathname]);
-
+export default function Navbar({ currentPage }) {
+    const [menu, setMenu] = useState(currentPage);
 
     return (
         <div className="w-[80%] mx-auto mt-8 mb-4">

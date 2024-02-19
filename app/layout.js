@@ -15,9 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="md:fixed w-full top-0 bg-white">
-          <Navbar />
-        </div>{" "}
+
+        {" "}
         {children}
         <div className="md:fixed bottom-0 w-full bg-white py-3">
           <Footer />
